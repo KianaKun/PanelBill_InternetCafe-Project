@@ -3,8 +3,11 @@
 
 Requirement :
 JDK21
+
 Intellij Idea
+
 JavaFX
+
 MySQL Platform Independent
 
 
