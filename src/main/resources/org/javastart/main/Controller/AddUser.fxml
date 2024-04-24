@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.javastart.main.Controller.ControllerAddUser">
+   <top>
+      <AnchorPane prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #FFC470;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="28.0" layoutY="13.0" prefHeight="46.0" prefWidth="119.0" text="Adding User">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="264.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="43.0" layoutY="41.0" prefHeight="34.0" prefWidth="78.0" text="Username">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_AddUsername" layoutX="47.0" layoutY="75.0" promptText="Username" />
+            <Label alignment="CENTER" layoutX="43.0" layoutY="107.0" prefHeight="34.0" prefWidth="78.0" text="Password">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="tf_AddPassword" layoutX="47.0" layoutY="141.0" promptText="Password" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="80.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_AddConfirm" layoutX="472.0" layoutY="27.0" mnemonicParsing="false" onAction="#AddUser" prefHeight="33.0" prefWidth="78.0" style="-fx-background-color: #453F78;" text="Confirm" textFill="WHITE" />
+            <Button fx:id="btn_AddCancel" layoutX="372.0" layoutY="27.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="33.0" prefWidth="78.0" style="-fx-background-color: #453F78;" text="Cancel" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="51.0" layoutY="26.0" prefHeight="34.0" prefWidth="135.0" text="Barney Internet Cafe">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

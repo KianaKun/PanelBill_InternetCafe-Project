@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.javastart.main.Controller.ControllerLoginUser">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="50.0" layoutY="33.0" text="Login User">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="109.0" text="Username" />
+            <PasswordField fx:id="tf_password" layoutX="25.0" layoutY="227.0" promptText="Password" />
+            <Button fx:id="btn_login" layoutX="29.0" layoutY="306.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="26.0" prefWidth="67.0" text="Login" />
+            <TextField fx:id="tf_username" layoutX="27.0" layoutY="138.0" promptText="Username" />
+            <Label layoutX="29.0" layoutY="200.0" text="Password" />
+            <Button fx:id="btn_login1" layoutX="115.0" layoutY="306.0" mnemonicParsing="false" onAction="#stop" prefHeight="26.0" prefWidth="67.0" text="Logout" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="343.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="30.0" layoutY="48.0" prefHeight="26.0" prefWidth="157.0" text="Waktu Anda Tersisa: ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeLabel" alignment="CENTER" layoutX="235.0" layoutY="47.0" prefHeight="54.0" prefWidth="102.0" />
+            <Label layoutX="358.0" layoutY="53.0" text="Detik" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

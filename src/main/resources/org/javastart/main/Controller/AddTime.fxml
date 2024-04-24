@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.javastart.main.Controller.ControllerAddTime">
+    <top>
+        <AnchorPane prefHeight="61.0" prefWidth="600.0" style="-fx-background-color: #673F69;" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="tf_search" layoutX="14.0" layoutY="17.0" prefHeight="26.0" prefWidth="175.0" promptText="Username" />
+                <Button fx:id="btn_apply" layoutX="493.0" layoutY="17.0" mnemonicParsing="false" onAction="#buttonAddTimeAction" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: transparent;" text="Apply" textFill="WHITE" />
+                <Button fx:id="btn_cancel" layoutX="401.0" layoutY="17.0" mnemonicParsing="false" onAction="#buttonCancelAction" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: transparent;" text="Cancel" textFill="WHITE" />
+            <TextField fx:id="tf_time" layoutX="203.0" layoutY="17.0" prefHeight="26.0" prefWidth="113.0" promptText="Time" />
+            <Label alignment="CENTER" layoutX="324.0" layoutY="20.0" prefHeight="21.0" prefWidth="34.0" text="Jam" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+    </top>
+    <left>
+        <AnchorPane prefHeight="338.0" prefWidth="187.0" style="-fx-background-color: #FB6D48;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="40.0" layoutY="273.0" text="Barney Internet Cafe" />
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="338.0" prefWidth="377.0" style="-fx-background-color: #FFAF45;" BorderPane.alignment="CENTER">
+            <children>
+                <TableView fx:id="tableView" layoutX="24.0" layoutY="24.0" prefHeight="300.0" prefWidth="360.0" style="-fx-background-color: #FFAF45;">
+                    <columns>
+                        <TableColumn fx:id="idUsernameTableColumn" prefWidth="264.79997634887695" text="Username" />
+                        <TableColumn fx:id="idWaktuTableColumn" prefWidth="93.60003662109375" text="Waktu" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
